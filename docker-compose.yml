@@ -30,7 +30,7 @@ services:
       S3_BUCKET_NAME: ${S3_BUCKET_NAME}
       PORT: 3000
       FRONTEND_URL: ${FRONTEND_URL}
-      NODE_ENV: production
+      NODE_ENV: development
     depends_on:
       postgres:
         condition: service_healthy
