@@ -9,6 +9,7 @@ const envSchema = z.object({
   AWS_ACCESS_KEY_ID: z.string().min(1, 'AWS_ACCESS_KEY_ID is required'),
   AWS_SECRET_ACCESS_KEY: z.string().min(1, 'AWS_SECRET_ACCESS_KEY is required'),
   S3_BUCKET_NAME: z.string().min(1, 'S3_BUCKET_NAME is required'),
+  SES_FROM_EMAIL: z.string().email('SES_FROM_EMAIL must be a valid email'),
   PORT: z.coerce.number().default(3000),
   FRONTEND_URL: z.string().default('http://localhost:5173'),
   NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),

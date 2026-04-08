@@ -1,9 +1,9 @@
 {
   "version": "1.0",
-  "generated_at": "2026-04-08T08:17:34+00:00",
-  "trigger": "user-prompt",
-  "session_id": "63113764-8993-40cc-a46e-1c21d0ec4298",
-  "command": "/debug",
+  "generated_at": "2026-04-08T08:28:57+00:00",
+  "trigger": "session-start",
+  "session_id": "2b92b281-8d7e-4fcd-a46e-e9a6022c3418",
+  "command": "",
   "gate_policy": "guided",
   "bootstrap_status": "failed",
   "active_work_item_id": "260408-1104-crud-admin-system",

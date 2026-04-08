@@ -4,6 +4,7 @@ import { db } from '../../config/db.js';
 import { env } from '../../config/env.js';
 import { users } from '../../db/schema/index.js';
 import { deleteFromS3, getPresignedUrl, uploadToS3 } from '../../lib/s3-upload.js';
+import { sendWelcomeEmail } from '../../lib/ses-email.js';
 
 type UserPublic = {
   id: string;
@@ -87,7 +88,14 @@ export const createUser = async (data: {
     throw err;
   }
 
-  return toPublic(inserted[0]);
+  const result = await toPublic(inserted[0]);
+
+  // Fire-and-forget: do not block response on email delivery
+  sendWelcomeEmail(result.email, result.name).catch((err) => {
+    console.error('Failed to send welcome email:', err);
+  });
+
+  return result;
 };
 
 export const updateUser = async (
