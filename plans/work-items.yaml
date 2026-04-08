@@ -1,0 +1,12 @@
+version: '1.0'
+active_item_id: 260408-1104-crud-admin-system
+items:
+- id: 260408-1104-crud-admin-system
+  path: plans/260408-1104-crud-admin-system
+  state: legacy
+  created_at: '2026-04-08T07:08:22+00:00'
+  updated_at: '2026-04-08T07:08:22+00:00'
+  project_type: maintenance
+  handoff_status: legacy-imported
+updated_at: '2026-04-08T07:08:22+00:00'
+created_at: '2026-04-08T07:08:22+00:00'

@@ -24,7 +24,7 @@ export default function CategoriesPage() {
 
   const { data: categories = [], isLoading } = useQuery<Category[]>({
     queryKey: ['categories'],
-    queryFn: () => api.get('/api/categories').then((r) => r.data),
+    queryFn: () => api.get('/api/categories').then((r) => r.data.categories ?? []),
   });
 
   const createMutation = useMutation({

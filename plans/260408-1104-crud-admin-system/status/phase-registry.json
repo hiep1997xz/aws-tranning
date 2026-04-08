@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "phases": {
+    "phase-01-project-setup": {
+      "spec_id": "phase-01-project-setup",
+      "status": "pending",
+      "blockedBy": [],
+      "assignee": "",
+      "claimed_at": "",
+      "file": "plans/260408-1104-crud-admin-system/phase-01-project-setup.md"
+    },
+    "phase-02-backend-core": {
+      "spec_id": "phase-02-backend-core",
+      "status": "pending",
+      "blockedBy": [],
+      "assignee": "",
+      "claimed_at": "",
+      "file": "plans/260408-1104-crud-admin-system/phase-02-backend-core.md"
+    },
+    "phase-03-backend-modules": {
+      "spec_id": "phase-03-backend-modules",
+      "status": "pending",
+      "blockedBy": [],
+      "assignee": "",
+      "claimed_at": "",
+      "file": "plans/260408-1104-crud-admin-system/phase-03-backend-modules.md"
+    },
+    "phase-04-frontend-core": {
+      "spec_id": "phase-04-frontend-core",
+      "status": "pending",
+      "blockedBy": [],
+      "assignee": "",
+      "claimed_at": "",
+      "file": "plans/260408-1104-crud-admin-system/phase-04-frontend-core.md"
+    },
+    "phase-05-frontend-modules": {
+      "spec_id": "phase-05-frontend-modules",
+      "status": "pending",
+      "blockedBy": [],
+      "assignee": "",
+      "claimed_at": "",
+      "file": "plans/260408-1104-crud-admin-system/phase-05-frontend-modules.md"
+    },
+    "phase-06-docker-infra": {
+      "spec_id": "phase-06-docker-infra",
+      "status": "pending",
+      "blockedBy": [],
+      "assignee": "",
+      "claimed_at": "",
+      "file": "plans/260408-1104-crud-admin-system/phase-06-docker-infra.md"
+    }
+  },
+  "ready": [
+    "phase-01-project-setup",
+    "phase-02-backend-core",
+    "phase-03-backend-modules",
+    "phase-04-frontend-core",
+    "phase-05-frontend-modules",
+    "phase-06-docker-infra"
+  ],
+  "in_progress": [],
+  "blocked": [],
+  "completed": [],
+  "generated_at": "2026-04-08T07:08:22+00:00"
+}

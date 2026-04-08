@@ -35,7 +35,7 @@ export default function UsersPage() {
 
   const { data: users = [], isLoading } = useQuery<User[]>({
     queryKey: ['users'],
-    queryFn: () => api.get('/api/users').then((r) => r.data),
+    queryFn: () => api.get('/api/users').then((r) => r.data.users ?? []),
   });
 
   const buildFormData = (values: UserFormValues, file: File | null): FormData => {

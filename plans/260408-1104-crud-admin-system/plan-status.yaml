@@ -1,0 +1,37 @@
+version: '1.0'
+plan_id: 260408-1104-crud-admin-system
+plan_file: plans/260408-1104-crud-admin-system/plan.md
+status: not-started
+summary:
+  total_phases: 6
+  completed: 0
+  in_progress: 0
+  pending: 6
+active_phase:
+  phase_id: '01'
+  phase_label: Project Setup
+  file: plans/260408-1104-crud-admin-system/phase-01-project-setup.md
+  status: not-started
+  checklist_open: 8
+phases:
+- id: '01'
+  label: Project Setup
+  status: not-started
+- id: '02'
+  label: Backend Core
+  status: not-started
+- id: '03'
+  label: Backend Modules
+  status: not-started
+- id: '04'
+  label: Frontend Core
+  status: not-started
+- id: '05'
+  label: Frontend Modules
+  status: not-started
+- id: '06'
+  label: Docker Infra
+  status: not-started
+progress_pct: 0.0
+updated_at: '2026-04-08T07:08:22+00:00'
+created_at: '2026-04-08T07:08:22+00:00'

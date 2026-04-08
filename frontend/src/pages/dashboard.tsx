@@ -7,15 +7,15 @@ import type { User, Category, Product } from '../types/entities';
 export default function DashboardPage() {
   const { data: users } = useQuery<User[]>({
     queryKey: ['users'],
-    queryFn: () => api.get('/api/users').then((r) => r.data),
+    queryFn: () => api.get('/api/users').then((r) => r.data.users ?? []),
   });
   const { data: products } = useQuery<Product[]>({
     queryKey: ['products'],
-    queryFn: () => api.get('/api/products').then((r) => r.data),
+    queryFn: () => api.get('/api/products').then((r) => r.data.products ?? []),
   });
   const { data: categories } = useQuery<Category[]>({
     queryKey: ['categories'],
-    queryFn: () => api.get('/api/categories').then((r) => r.data),
+    queryFn: () => api.get('/api/categories').then((r) => r.data.categories ?? []),
   });
 
   return (

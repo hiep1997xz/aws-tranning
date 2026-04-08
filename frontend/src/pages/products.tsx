@@ -38,12 +38,12 @@ export default function ProductsPage() {
 
   const { data: products = [], isLoading } = useQuery<Product[]>({
     queryKey: ['products'],
-    queryFn: () => api.get('/api/products').then((r) => r.data),
+    queryFn: () => api.get('/api/products').then((r) => r.data.products ?? []),
   });
 
   const { data: categories = [] } = useQuery<Category[]>({
     queryKey: ['categories'],
-    queryFn: () => api.get('/api/categories').then((r) => r.data),
+    queryFn: () => api.get('/api/categories').then((r) => r.data.categories ?? []),
   });
 
   const buildFormData = (values: ProductFormValues, file: File | null): FormData => {

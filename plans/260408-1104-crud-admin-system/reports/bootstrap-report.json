@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-04-08T07:08:32+00:00",
+  "trigger": "user-prompt",
+  "session_id": "132c78e5-9c14-4f67-b514-8e58c251770f",
+  "command": "/fix",
+  "gate_policy": "guided",
+  "bootstrap_status": "failed",
+  "active_work_item_id": "260408-1104-crud-admin-system",
+  "actions_run": [
+    "workflow-status-sync"
+  ],
+  "issues": [
+    "workflow-status sync failed (exit=1)"
+  ],
+  "results": {
+    "workflow_status_sync": {
+      "ok": false,
+      "exit_code": 1,
+      "script": "/home/hiepht/.claude/scripts/workflow_status.py",
+      "stdout_tail": "{\n  \"status\": \"missing\",\n  \"message\": \"workflow-status.yaml not found. Run /workflow-init first.\",\n  \"project_root\": \"/home/hiepht/Desktop/Test/aws-tranning\",\n  \"next_action\": \"Run /workflow-init --apply --project-type maintenance\",\n  \"next_action_struct\": {\n    \"command\": \"/workflow-init --apply --project-type maintenance\",\n    \"reason\": \"Workflow artifacts are missing.\",\n    \"requires_new_session\": false,\n    \"session_guidance\": \"Same session is acceptable for this step.\"\n  },\n  \"active_work_item_id\": \"\",\n  \"active_work_item_path\": \"\",\n  \"work_item_state\": \"\",\n  \"handoff_status\": \"\",\n  \"lifecycle_status\": \"\",\n  \"lifecycle_active_command\": \"\",\n  \"lifecycle_last_heartbeat_at\": \"\",\n  \"lifecycle_stale\": false,\n  \"auto_quality_status\": \"\",\n  \"gate_code_review_allowed\": false,\n  \"gate_git_allowed\": false,\n  \"gate_reason\": \"\",\n  \"recovery_command\": \"\",\n  \"gate_policy\": \"guided\",\n  \"bootstrap_status\": \"\",\n  \"bootstrap_actions_run\": [],\n  \"context_snapshot_path\": \"\",\n  \"routing_enforced\": true\n}",
+      "stderr_tail": "",
+      "payload": {
+        "status": "missing",
+        "message": "workflow-status.yaml not found. Run /workflow-init first.",
+        "project_root": "/home/hiepht/Desktop/Test/aws-tranning",
+        "next_action": "Run /workflow-init --apply --project-type maintenance",
+        "next_action_struct": {
+          "command": "/workflow-init --apply --project-type maintenance",
+          "reason": "Workflow artifacts are missing.",
+          "requires_new_session": false,
+          "session_guidance": "Same session is acceptable for this step."
+        },
+        "active_work_item_id": "",
+        "active_work_item_path": "",
+        "work_item_state": "",
+        "handoff_status": "",
+        "lifecycle_status": "",
+        "lifecycle_active_command": "",
+        "lifecycle_last_heartbeat_at": "",
+        "lifecycle_stale": false,
+        "auto_quality_status": "",
+        "gate_code_review_allowed": false,
+        "gate_git_allowed": false,
+        "gate_reason": "",
+        "recovery_command": "",
+        "gate_policy": "guided",
+        "bootstrap_status": "",
+        "bootstrap_actions_run": [],
+        "context_snapshot_path": "",
+        "routing_enforced": true
+      }
+    }
+  }
+}

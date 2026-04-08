@@ -1,9 +1,8 @@
-import { use, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Form, Input, Button, Card, Typography, Alert, App } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import api from '../lib/axios';
 import { useAuthStore } from '../store/auth-store';
-import Password from 'antd/es/input/Password';
 
 export default function LoginPage() {
   const [form] = Form.useForm();
@@ -39,9 +38,9 @@ export default function LoginPage() {
           className="!mb-4"
           type="info"
           showIcon
-          title={
+          message={
             <span>
-              Demo: <strong></strong> / <strong>admin123456</strong>
+              Demo: <strong>admin@example.com</strong> / <strong>admin123456</strong>
             </span>
           }
         />

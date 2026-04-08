@@ -1,0 +1,79 @@
+{
+  "version": "1.0",
+  "work_item_id": "260408-1104-crud-admin-system",
+  "status": "legacy-imported",
+  "handoff_status": "legacy-imported",
+  "problem_statement": "",
+  "goals": [],
+  "scope_in": [],
+  "scope_out": [],
+  "constraints": [],
+  "chosen_direction": "",
+  "architecture_decisions": [],
+  "ui_decisions": [],
+  "information_architecture": [],
+  "sitemap": [],
+  "screen_inventory": [],
+  "primary_user_flows": [],
+  "interaction_contract": [],
+  "concept_options": [],
+  "decision_checkpoints": [],
+  "design_system": "",
+  "responsive_strategy": "",
+  "accessibility_constraints": [],
+  "state_matrix": [],
+  "product_domain": "",
+  "primary_user_archetypes": [],
+  "primary_jobs": [],
+  "information_architecture_details": {
+    "navigation_model": "",
+    "entry_points": [],
+    "primary_zones": [],
+    "notes": []
+  },
+  "interaction_contract_details": {
+    "buttons": [],
+    "modals": [],
+    "notifications": [],
+    "state_model": [],
+    "contract_notes": []
+  },
+  "selected_concept": {
+    "name": "",
+    "description": "",
+    "rationale": ""
+  },
+  "rejected_concepts": [],
+  "concept_rationale": "",
+  "ui_readiness": {
+    "scope_detected": false,
+    "level": "not_applicable",
+    "enforcement_mode": "warning-only",
+    "required_fields": [
+      "information_architecture",
+      "sitemap",
+      "screen_inventory",
+      "primary_user_flows",
+      "interaction_contract",
+      "concept_options"
+    ],
+    "ready_fields": [],
+    "missing_fields": [],
+    "warnings": [],
+    "warning_count": 0
+  },
+  "ui_readiness_warnings": [],
+  "dependencies": [],
+  "test_strategy": "",
+  "tradeoffs": [],
+  "acceptance_criteria": [],
+  "risks": [],
+  "open_questions": [],
+  "sources": [
+    "plans/260408-1104-crud-admin-system/plan.md"
+  ],
+  "approved_by": "",
+  "approved_at": "",
+  "updated_at": "2026-04-08T07:08:22+00:00",
+  "created_at": "2026-04-08T07:08:22+00:00"
+}
