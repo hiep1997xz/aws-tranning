@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "generated_at": "2026-04-08T07:08:32+00:00",
+  "generated_at": "2026-04-08T07:27:23+00:00",
   "trigger": "user-prompt",
-  "session_id": "132c78e5-9c14-4f67-b514-8e58c251770f",
+  "session_id": "9a33e894-71d0-41a2-b3fe-d9d25f76250e",
   "command": "/fix",
   "gate_policy": "guided",
   "bootstrap_status": "failed",

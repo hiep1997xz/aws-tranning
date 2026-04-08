@@ -21,6 +21,7 @@ COPY --from=builder /app/package.json ./package.json
 # Copy drizzle config and schema source for drizzle-kit migrate at runtime
 # drizzle-kit migrate reads SQL files from migrations folder
 COPY --from=builder /app/src/db ./src/db
+COPY --from=builder /app/src/config ./src/config
 COPY --from=builder /app/drizzle.config.ts ./drizzle.config.ts
 COPY --from=builder /app/tsconfig.json ./tsconfig.json
 
